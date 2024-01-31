@@ -1,0 +1,424 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foods-Recipes </title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-slate-100 text-gray-700">
+    <!-- Content wrapper -->
+    <div class="content md:flex">
+      <!-- Nav container -->
+      <div class="nav-con visible sm:visible md:fixed top-0 left-0 md:w-32">
+        <div class="">
+          <nav class="fic">
+            <div class="flex justify-between items-center">
+              <h1 class="font-bold md:text-sm sm:w-38 flex uppercase p-4">
+                <a class="md:absolute md:top-4" href="#">Food Ninja</a>
+              </h1>
+              <div
+                class="mr-2 transition ease-in-out duration-500 flex tog cursor-pointer md:hidden"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div class="hidden md:block">
+              <span class="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="close contrls w-6 h-6 mt-5 ml-24 border-2 border-neutral-500 cursor-pointer"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
+                  />
+                </svg>
+              </span>
+            </div>
+
+            <ul
+              class="transition ease-in-out duration-500 list md:block hidden"
+            >
+              <li class="dlist pl-2">
+                <div>
+                  <span class="head-list block ">Recipes</span>
+                  <ul class="drop hidden">
+                    <li class="sub-list">
+                      <a href="#">Breakfast & Brunch Recipes</a>
+                    </li>
+                    <li class="sub-list">
+                      <a href="#">Lunch Recipes</a>
+                    </li>
+
+                    <li class="sub-list">
+                      <a href="#">Appetizers & Snack Recipes</a>
+                    </li>
+                    <li class="sub-list">
+                      <a href="#">Dinner Recipes</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="dlist pl-2">
+                <div>
+                  <span class="head-list block">Health & Diet</span>
+                  <ul class="drop hidden">
+                    <li class="sub-list">
+                      <a href="#">Healthy Recipes</a>
+                    </li>
+                    <li class="sub-list">
+                      <a href="#">Vegetarian Recipes</a>
+                    </li>
+
+                    <li class="sub-list">
+                      <a href="#">Vegan Recipes</a>
+                    </li>
+                    <li class="sub-list">
+                      <a href="#">Diet Recipes</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="dlist pl-2">
+                <div>
+                  <span class="head-list block">Meat & Seafood</span>
+                  <ul class="drop hidden">
+                    <li class="sub-list">
+                      <a href="#">Chicken Recipes</a>
+                    </li>
+
+                    <li class="sub-list">
+                      <a href="#">Salmon Recipes</a>
+                    </li>
+
+                    <li class="sub-list">
+                      <a href="#">Shrimp Recipes</a>
+                    </li>
+
+                    <li class="sub-list">
+                      <a href="#">Pork Recipes</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="dlist pl-2">
+                <div>
+                  <span class="head-list block">Seasonal</span>
+                  <ul class="drop hidden">
+                    <li class="sub-list">
+                      <a href="#">Spring Recipes</a>
+                    </li>
+                    <li class="sub-list">
+                      <a href="#">Summer Recipes</a>
+                    </li>
+
+                    <li class="sub-list">
+                      <a href="#">Fall Recipes</a>
+                    </li>
+                    <li class="sub-list">
+                      <a href="#">Winter Recipes</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="dlist pl-2">
+                <div>
+                  <span class="head-list block">Popular</span>
+
+                  <ul class="drop hidden">
+                    <li class="sub-list">
+                      <a href="#">Trending Now</a>
+                    </li>
+                    <li class="sub-list">
+                      <a href="#">Chili Recipes</a>
+                    </li>
+
+                    <li class="sub-list">
+                      <a href="#">Soup Recipes</a>
+                    </li>
+                    <li class="sub-list">
+                      <a href="#">Tofu Recipes</a>
+                    </li>
+                    <li class="sub-list">
+                      <a href="#">Pasta Recipes</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="dlist pl-2">
+                <div>
+                  <span class="head-list block">Cuisine</span>
+
+                  <ul class="drop hidden">
+                    <li class="sub-list hov">
+                      <a href="#">Mexican Recipes</a>
+                    </li>
+                    <li class="sub-list hov">
+                      <a href="#">Italian Recipes</a>
+                    </li>
+
+                    <li class="sub-list hov">
+                      <a href="#">Indian Recipes</a>
+                    </li>
+                    <li class="sub-list hov">
+                      <a href="#">Thai Recipes</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <main class="main  px-5 md:px-10 bg-gray-200 flex-1 md:ml-32">
+        <h1
+          class="foodnin md:absolute md:top-3 font-bold -ml-4 md:text-sm sm:w-38 hidden uppercase p-4"
+        >
+          <a class=" md:absolute md:w-32 md:top-1" href="#">Food Ninja</a>
+        </h1>
+        <div
+          class="mr-2 transition  ease-in-out duration-500 flex tog cursor-pointer"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6 open contrls hidden mt-12 md:absolute border-2 border-neutral-500 cursor-pointer"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+            />
+          </svg>
+        </div>
+
+        <div class=" details md:-m-26   flex justify-end pt-8">
+          <a class="btn" href="#">Login</a>
+          <a class="btn" href="#">Signup</a>
+        </div>
+
+        <header class="flex justify-center mt-7">
+          <h2 class="text-gray-700 text-4xl font-semibold">
+            Recipes For Ninjas
+          </h2>
+        </header>
+
+        <!-- Recipe Container -->
+        <div>
+          <h4 class="font-bold mt-12 border-b border-gray-300 pb-2">
+            Latest Recipes
+          </h4>
+
+          <!-- Latest Recipe cards container -->
+          <div class="card-container">
+            <div class="card">
+              <img class="mge" src="images/pizza.jpg" alt="" srcset="" />
+
+              <div>
+                <span class="block px-2">Bean Stew</span>
+                <span class="block px-2">Recipe by Zoe</span>
+              </div>
+              <div class="barge">
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                    />
+                  </svg>
+                </span>
+                <span>30min</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <img class="mge" src="images/pizza.jpg" alt="" srcset="" />
+
+              <div>
+                <span class="block px-2">Bean Stew</span>
+                <span class="block px-2">Recipe by Zoe</span>
+              </div>
+              <div class="barge">
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                    />
+                  </svg>
+                </span>
+                <span>30min</span>
+              </div>
+            </div>
+            <div class="card">
+              <img class="mge" src="images/pizza.jpg" alt="" srcset="" />
+
+              <div>
+                <span class="block px-2">Bean Stew</span>
+                <span class="block px-2">Recipe by Zoe</span>
+              </div>
+              <div class="barge">
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                    />
+                  </svg>
+                </span>
+                <span>30min</span>
+              </div>
+            </div>
+          </div>
+
+          <h4 class="font-bold mt-12 pb-2 border-b border-gray-300">
+            Most popular Recipes
+          </h4>
+          <!-- Most Popular Recipe card container -->
+          <div class="card-container mt-8">
+            <div class="card">
+              <img class="mge" src="images/pizza.jpg" alt="" srcset="" />
+
+              <div>
+                <span class="block px-2">Bean Stew</span>
+                <span class="block px-2">Recipe by Zoe</span>
+              </div>
+              <div class="barge">
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                    />
+                  </svg>
+                </span>
+                <span>30min</span>
+              </div>
+            </div>
+            <div class="card">
+              <img class="mge" src="images/pizza.jpg" alt="" srcset="" />
+
+              <div>
+                <span class="block px-2">Bean Stew</span>
+                <span class="block px-2">Recipe by Zoe</span>
+              </div>
+              <div class="barge">
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                    />
+                  </svg>
+                </span>
+                <span>30min</span>
+              </div>
+            </div>
+            <div class="card">
+              <img class="mge" src="images/pizza.jpg" alt="" srcset="" />
+
+              <div>
+                <span class="block px-2">Bean Stew</span>
+                <span class="block px-2">Recipe by Zoe</span>
+              </div>
+              <div class="barge">
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                    />
+                  </svg>
+                </span>
+                <span>30min</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex py-8 justify-center">
+            <span
+              class="shadow-lg transition ease-in-out duration-500 text-white bg-zinc-600 px-3 rounded-full hover:scale-125 hover:text-gray-700 hover:bg-zinc-300 hover:shadow-xl"
+            >
+              Load More
+            </span>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -41,7 +41,7 @@
 }
 
 .head-list{
-    @apply hover:text-gray-900 text-gray-500
+    @apply hover:text-gray-900 text-gray-500 font-bold
 }
 
 .contrls{

@@ -5,7 +5,7 @@
 
 
 .card{
-    @apply transition ease-in-out duration-700 rounded bg-white overflow-hidden relative shadow-md hover:shadow-xl  md:hover:scale-110  hover:scale-105 mt-8 md:mt-0
+    @apply transition ease-in-out duration-700 rounded bg-white overflow-hidden relative shadow-md hover:shadow-xl  md:hover:scale-110  hover:scale-105 mt-8 md:mt-0 
 }
 
 .mge{
@@ -28,20 +28,20 @@
 
 
 .card-container{
-    @apply md:grid grid-cols-3 gap-5 md:gap-8 mt-8
+    @apply md:grid grid-cols-3  md:gap-8 mt-8 
 }
 
 .dlist{
-    @apply mt-4 text-gray-700 cursor-pointer
+    @apply mt-4  text-gray-700 cursor-pointer
 }
 
 
 .sub-list{
-    @apply hover:text-gray-400
+    @apply text-gray-800 hover:text-gray-500
 }
 
 .head-list{
-    @apply hover:text-red-500
+    @apply hover:text-gray-900 text-gray-500
 }
 
 .contrls{

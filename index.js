@@ -12,6 +12,13 @@ let main = document.querySelector("main");
 let foodnin = document.querySelector(".foodnin");
 let open = document.querySelector(".open");
 let details = document.querySelector(".details");
+let resipi = document.querySelector('.resipi');
+
+
+
+
+
+
 
 close.addEventListener("click", () => {
   navcon.classList.remove("visible");
